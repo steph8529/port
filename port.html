@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+      body {
+    background: url('https://i.gyazo.com/88ca7682d8ad3c91b6570a8cb057ed3e.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(0.9px);
+    z-index: -1;
+}
+
+        header {
+            background-color: rgba(34, 34, 34, 0.9);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(34, 34, 34, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .gallery img, .gallery video {
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .gallery img:hover, .gallery video:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(34, 34, 34, 0.9);
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hey, I am a roblox luau scripter named Steve. I have been scripting since January, 2023. I am proficient in combat systems, ui scripting, and physic scripting.</p>
+        <p>I am also a roblox animator, specifically R6 rigs. I do not have much experience in R15 rigs and I have been animating since April, 2024</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p> My Scripting Portfolio </p>
+        <div class="gallery">
+           <img src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477936190427187/Screenshot_2024-08-13_231904.png?ex=679cfc25&is=679baaa5&hm=116debb2063ebc1ff83434bd5c6e0fa9230c5dbb9e9a057a747f46adba42c8a9&" alt="">
+            <img src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477936429498439/Screenshot_2024-08-13_231710.png?ex=679cfc25&is=679baaa5&hm=9bde9d83bac8efdc0530565c338358f50bcdf792f6b0269f80ff9e3af3d83433&" alt="">
+            <img src=https://cdn.discordapp.com/attachments/1306477382873382992/1306477936702132244/Screenshot_2024-08-13_231743.png?ex=679cfc25&is=679baaa5&hm=5e4b70295ff4606386a273d9a36007800e20c01799acf48bf5981a0871c1d089&" alt="">
+            <img src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477937058513007/Screenshot_2024-08-13_231801.png?ex=679cfc25&is=679baaa5&hm=4a53f6d38642d1719be899345323e7ca6c7e961849d915fe11a62b37c6e7e917&" alt="">
+	   <video controls src="https://cdn.discordapp.com/attachments/1287400114389778544/1334609149211967549/Screen_Recording_2025-01-20_182935.mp4?ex=679d2721&is=679bd5a1&hm=9e5eeb82407481beb4dc0b6f0627b600ce7e7d8f6938e5d41a797f5a7b1f8f7c&"></video>
+	<video controls src="https://cdn.discordapp.com/attachments/1287400114389778544/1334609150000365578/Screen_Recording_2024-09-24_195456.mp4?ex=679d2721&is=679bd5a1&hm=ef4fed9adab3d737599285e22d90227c07ef71594ac90b4b0bb726ef9f75e825&"></video>
+	<video controls src="https://cdn.discordapp.com/attachments/1287400114389778544/1334609150604349662/Screen_Recording_2025-01-12_135626.mp4?ex=679d2721&is=679bd5a1&hm=be5cd44d0b6dc94d968ce38906b9b5f0b5dd49fd8222fc0da7f2addba411bde5&"></video>
+        </div>  
+        <p> My Animation Portfolio </p>
+        <div class="gallery">
+            <video controls src="https://cdn.discordapp.com/attachments/1287400114389778544/1334605377295351889/Screen_Recording_2024-09-28_130624.mp4?ex=679d239d&is=679bd21d&hm=fe383c5db8ca0192085be0aa026941dfabf549641b8fd60ee0a1c5825bad0035&"></video>
+            <video controls src="https://cdn.discordapp.com/attachments/1287400114389778544/1334605377555267637/Screen_Recording_2024-10-12_163440.mp4?ex=679d239d&is=679bd21d&hm=1845a72989a4a1ae1900522099bf4d315c248221bbc599eea5d716ad832d75be&"></video>
+            <video controls src="https://cdn.discordapp.com/attachments/1287400114389778544/1334605377823576146/Screen_Recording_2024-11-30_114914.mp4?ex=679d239d&is=679bd21d&hm=3870e8b69f939a918fc778bbb0dd0a9c109ef610149c8d43268ae0c755472f8e&"></video>
+            <video controls src="https://cdn.discordapp.com/attachments/1287400114389778544/1334605378188738683/Screen_Recording_2024-12-13_113235.mp4?ex=679d239d&is=679bd21d&hm=2c3909c01935acea2b5f8b1ea5d3af71f7c7de63663c46cc36e8081b3c770a34&"></video>
+            <video controls src="https://cdn.discordapp.com/attachments/1287400114389778544/1334605379488841760/Screen_Recording_2025-01-28_165837.mp4?ex=679d239e&is=679bd21e&hm=c90075eede9cb47eff6c16965fcfa3e7dd1a4d865d7c8e3f724cede85066955a&"></video>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach out to me on Discord: <strong>stephenonschool8529</strong></p>
+        <p>Or message me on Roblox: <strong>ProGamerSteve78</strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; Steve 2024</p>
+    </footer>
+</body>
+</html>
