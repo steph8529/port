@@ -12,86 +12,114 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
-      body {
-    background: url('https://deeplor.s3.us-west-2.amazonaws.com/matting_original/2025/03/22/8411dc21101a47dda7b8f60bdc8f75e2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250322T140319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=10800&X-Amz-Credential=AKIAROYXHKZUSZONTWIG%2F20250322%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=4cf9e396a8ef43bc009368ced1c294c369c025d3196627655c02a92dac731d0c') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-}
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    filter: blur(0.9px);
-    z-index: -1;
-}
+        body {
+            background: url('https://deeplor.s3.us-west-2.amazonaws.com/matting_original/2025/03/22/8411dc21101a47dda7b8f60bdc8f75e2.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            filter: blur(1px);
+            z-index: -1;
+        }
 
         header {
-            background-color: rgba(34, 34, 34, 0.9);
-            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 15px 0;
             text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
         }
+
         header h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            font-weight: 600;
         }
+
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 10px;
+            gap: 30px;
+            padding: 10px;
         }
-        nav ul li {
-            display: inline;
-        }
+
         nav ul li a {
             color: white;
             text-decoration: none;
-            padding: 10px;
-            transition: 0.3s;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
         }
+
         nav ul li a:hover {
-            color: #FFD700;
+            background-color: #FFD700;
+            color: black;
         }
+
         section {
             max-width: 1000px;
             margin: 50px auto;
-            padding: 20px;
-            background-color: rgba(34, 34, 34, 0.9);
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
         }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #FFD700;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            gap: 15px;
             padding: 20px 0;
         }
+
         .gallery img, .gallery video {
             width: 100%;
             border-radius: 10px;
-            transition: 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
         }
+
         .gallery img:hover, .gallery video:hover {
             transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7);
         }
+
         footer {
             text-align: center;
-            background-color: rgba(34, 34, 34, 0.9);
+            background-color: rgba(0, 0, 0, 0.85);
             padding: 15px;
             position: relative;
             bottom: 0;
             width: 100%;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Steve's Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -109,34 +137,27 @@ body::before {
 
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <p> My Scripting Portfolio </p>
+
+        <h3>My Scripting Portfolio</h3>
         <div class="gallery">
-           <img src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477936190427187/Screenshot_2024-08-13_231904.png?ex=67df8fe5&is=67de3e65&hm=af81d32746664cef7b7763713bc9bd0ef82560cc33cb8545296616e96f73bce7&" alt="">
-            <img src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477936429498439/Screenshot_2024-08-13_231710.png?ex=67df8fe5&is=67de3e65&hm=9c6045855b3a361987277064b00992dc51336c5b6c9081fc01824f0e530a5083&https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1306477382873382992%2F1306477936702132244%2FScreenshot_2024-08-13_231743.png%3Fex=679cfc25&" alt="">
-            <img src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477936702132244/Screenshot_2024-08-13_231743.png?ex=67df8fe5&is=67de3e65&hm=72b1c12571ca948c16324ceb0cfa1fe06d5b6d4f299481f13c4519419c479ee5&" alt="">
-            <img src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477937058513007/Screenshot_2024-08-13_231801.png?ex=67df8fe5&is=67de3e65&hm=f525764bef9df57da383fafea6cb65cab4971c7529bc050a4955b4d2885bb573&" alt="">
-	   <video controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353010452183122041/Screen_Recording_2024-09-24_195456.mp4?ex=67e018ad&is=67dec72d&hm=dc6132073d512dac348f53ba5e9a5f82a9cbdb77420a878bc4f811156f93e2d9&"></video>
-	<video controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353011138031259809/Screen_Recording_2025-01-12_135626.mp4?ex=67e01951&is=67dec7d1&hm=ae3c46fb78f0297f03b197ac835e55bce80ca692b19cd22690f821d3736dd5dd&"></video>
-	<video controls src="https://cloud-d.edupage.org/cloud?z%3Ap7gQMKMa9A1enD%2BhEkg%2FTjcbSgMklvj%2BklepBocQxdzm%2Bp4XuD%2FsSfAaEKAr9BQWbO9JXMM177mrIj7A5bbGKA%3D%3D"></video>
-        </div>  
-        <p> My Animation Portfolio </p>
+            <img loading="lazy" src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477936190427187/Screenshot_2024-08-13_231904.png">
+            <img loading="lazy" src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477936429498439/Screenshot_2024-08-13_231710.png">
+            <img loading="lazy" src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477936702132244/Screenshot_2024-08-13_231743.png">
+            <img loading="lazy" src="https://cdn.discordapp.com/attachments/1306477382873382992/1306477937058513007/Screenshot_2024-08-13_231801.png">
+            <video loading="lazy" controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353010452183122041/Screen_Recording_2024-09-24_195456.mp4"></video>
+            <video loading="lazy" controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353011138031259809/Screen_Recording_2025-01-12_135626.mp4"></video>
+        </div>
+
+        <h3>My Animation Portfolio</h3>
         <div class="gallery">
-            <video controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353008496764784650/805710cf14e7a8ae66405246d213c2eb.mp4?ex=67e016db&is=67dec55b&hm=551f7f6890b67905769d1e3bf3e574483b5e8541fe4218aeadabf18ba57c810b&"></video>
-            <video controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353008497092067522/7762d67c1115e7694d558b5529c2ebc3.mp4?ex=67e016db&is=67dec55b&hm=1ed6a274fdd0da5d6a380aa5a8510958374276db9e91e7b377fa07f00ce77d66&"></video>
-            <video controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353008496362389585/d4a36b8d861808de1bbd3867bb3e6389.mp4?ex=67e016db&is=67dec55b&hm=5f09f114bcce1e591a780b13ab3a35ccc3e2487cfc34874cfb25ffe81bcf288f&"></video>
-            <video controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353007970815971338/552c59a73027d2e3bc47cc4269abb5fb.mp4?ex=67e0165d&is=67dec4dd&hm=12ed5253a6a9d8a8bf924d73d2e3f1a5c61d37e93f113a949163470e9f410f5d&"></video>
-            <video controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353007379213582387/7ea33f2a8b28ec80b75e1a88dedbc0c9.mp4?ex=67e015d0&is=67dec450&hm=ec88d7f30448b42ac295445d2df93f256bf6366478b70fbe91a9ffc8d34f3ed4&"></video>
+            <video loading="lazy" controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353008496764784650/805710cf14e7a8ae66405246d213c2eb.mp4"></video>
+            <video loading="lazy" controls src="https://cdn.discordapp.com/attachments/1120053749763821669/1353008497092067522/7762d67c1115e7694d558b5529c2ebc3.mp4"></video>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach out to me on Discord: <strong>stephenonschool8529</strong></p>
-        <p>Or message me on Roblox: <strong>ProGamerSteve78</strong></p>
-    </section>
-
     <footer>
-        <p>&copy; Steve 2024</p>
+        <p>&copy;2024 Steve's Portfolio</p>
     </footer>
+
 </body>
 </html>
